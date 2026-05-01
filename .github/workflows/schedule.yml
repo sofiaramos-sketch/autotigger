@@ -1,0 +1,12 @@
+name: Schedule Workflow
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+
+jobs:
+  schedule-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mensaje schedule
+        run: echo "Se ejecuta automáticamente cada 5 minutos"
