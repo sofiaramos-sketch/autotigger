@@ -1,0 +1,10 @@
+name: Issue Comment Workflow
+
+on: issue_comment
+
+jobs:
+  comment-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mensaje comentario
+        run: echo "💬 Se ejecutó con un COMENTARIO en issue"
