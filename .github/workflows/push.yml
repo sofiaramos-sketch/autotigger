@@ -1,0 +1,10 @@
+name: Push Workflow
+
+on: push
+
+jobs:
+  push-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mensaje push
+        run: echo "✅ Se ejecutó el workflow con un PUSH"
