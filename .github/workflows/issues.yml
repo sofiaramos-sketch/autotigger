@@ -1,0 +1,10 @@
+name: Issues Workflow
+
+on: issues
+
+jobs:
+  issues-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mensaje issue
+        run: echo "🐛 Se ejecutó con un ISSUE"
